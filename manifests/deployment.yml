@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kahansinghtruyumwebapimenuitemlisting 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kahansinghtruyumwebapimenuitemlisting
+  template:
+    metadata:
+      labels:
+        app: kahansinghtruyumwebapimenuitemlisting 
+    spec:
+      containers:
+        - name: kahansinghtruyumwebapimenuitemlisting 
+          image: dnazurecontainer2149365.azurecr.io/kahansinghtruyumwebapimenuitemlisting
+          ports:
+          - containerPort: 80
